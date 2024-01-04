@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Perhitungan Segitiga</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Halo Welcome to Katik</h1>
+        <h4>Website ini akan Memudahkan anda untuk melakukan Perhitungan Luas dan Keliling Segitiga</h4>
+        <nav>
+            <a href="#hitungLuasSegitiga">Luas Segitiga</a>
+            <a href="#hitungKelilingSegitiga">Keliling Segitiga</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hitungLuasSegitiga" class="hitungLuasSegitiga">
+            <h2>Luas Segitiga</h2>
+            <div class="penjelasanLuasSegitiga">
+                <img src="/assets/Luas Segitiga.jpg">
+                <p>Rumus untuk menghitung Luas Segitiga adalah Sebagai Berikut : </p>
+                <p>(a * t) / 2</p>
+            </div>
+            <div class="listKeteranganLuas">
+                <p>Dengan Keterangan</p>
+                <ul>
+                    <li>L = luas Segitiga</li>
+                    <li>a = Panjang alas</li>
+                    <li>t = tinggi</li>
+                </ul>
+            </div>
+            <h2>Menghitung Luas Segitiga</h2>
+            <form id="luas-segitiga">
+                <label for="alas">Alas :</label>
+                <input type="number" id="alas" placeholder="Masukkan Nilai Alas" required>
+
+                <label for="tinggi">Tinggi :</label>
+                <input type="number" id="tinggi" placeholder="Masukkan Nilai Tinggi" required>
+
+                <button type="button" onclick="hitungLuas()">Hitung</button>
+                <button type="button" onclick="resetFormLuas()">Reset</button>
+            </form>
+            <section id="resultSection2" style="display:none;">
+                <h2>Hasil Perhitungan</h2>
+                <p id="resultArea2"></p>
+            </section>
+        </section>
+
+        <section id="hitungKelilingSegitiga" class="hitungKelilingSegitiga">
+            <h2>Luas Segitiga</h2>
+            <div class="penjelasanKelilingSegitiga">
+                <img src="/assets/Luas Segitiga.jpg">
+                <p>Rumus untuk menghitung Keliling Segitiga adalah Sebagai Berikut : </p>
+                <p>K = A + B + C</p>
+            </div>
+            <div class="listKeteranganKeliling">
+                <p>Dengan Keterangan</p>
+                <ul>
+                    <li>K = Keliling Segitiga</li>
+                    <li>A = Panjang Sisi A</li>
+                    <li>B = Panjang Sisi B</li>
+                    <li>C = Panjang Sisi C</li>
+                </ul>
+            </div>
+            <form id="keliling-segitiga">
+                <h2>Menghitung Keliling Segitiga</h2>
+                <label for="sideA">Sisi A:</label>
+                <input type="number" id="sideA" placeholder="Masukkan Nilai Sisi A" required>
+
+                <label for="sideB">Sisi B:</label>
+                <input type="number" id="sideB" placeholder="Masukkan Nilai Sisi B" required>
+
+                <label for="sideC">Sisi C:</label>
+                <input type="number" id="sideC" placeholder="Masukkan Nilai Sisi C" required>
+
+                <button type="button" onclick="calculate()">Hitung</button>
+                <button type="button" onclick="resetFormKeliling()">Reset</button>
+            </form>
+            <section id="resultSection" style="display:none;">
+                <h2>Hasil Perhitungan</h2>
+                <p id="resultArea"></p>
+            </section>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Website Pribadi Milikku - 2024</p>
+                <p>Designed by Arielio Bayu Aji</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
